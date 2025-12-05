@@ -20,7 +20,7 @@ interface IERC20 {
     function symbol() external view returns (string memory);
 }
 
-contract DexWalletV2 is Ownable, ReentrancyGuard {
+contract DexWallet is Ownable, ReentrancyGuard {
     // 存储所有充值过的ERC20合约地址
     address[] public allTokens;
 
@@ -618,6 +618,7 @@ contract DexWalletV2 is Ownable, ReentrancyGuard {
             block.timestamp
         );
     }
+
 
 
 }
